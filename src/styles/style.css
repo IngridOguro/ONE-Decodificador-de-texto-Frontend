@@ -2,9 +2,11 @@
     margin: 0;
     padding:0;
 }
+body{
+    height: 100vh;
+}
 
 header{
-    margin:10px;
 }
 
 main{
@@ -17,6 +19,7 @@ main{
 .section-1, .section-2{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     width: 50vw;
     height: 100vh;
     align-items: center;
@@ -31,6 +34,70 @@ main{
     background-color:crimson;
 }
 
+.section-1__campo-input{
+    display: flex;
+    align-items: flex-start;
+    background-color: black;
+    height: 60%;
+    width: 70%;
+    padding: 10%;
+}
+#texto-a-converter{
+    padding: 20px;
+    font-size:1.2em;
+    border: none;
+    /* background-color: rgba(0,0,0,0); */
+    background-color: blueviolet;
+    padding: 20;
+    vertical-align: top;
+}
+
+
+::placeholder {
+    color: black;
+    font-size:1.2em;
+    opacity: 1; /* Firefox */
+  }
+
+.section-1__botoes{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    height: 10%;
+    width: 90%;
+    background-color: darkblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1__botoes__botao{
+    border: 0;
+    width: 45%;
+    height: 50%;
+}
+
+.section-2__conteudo{
+    background-color: blue;
+    height: 92%;
+}
+
+.section-2__conteudo__img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    padding: 10%;
+}
+
 .img-looking{
-    width: 30%;
+    width: 80%;
+}
+
+.section-2__conteudo__texto{
+    height: 10%;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }

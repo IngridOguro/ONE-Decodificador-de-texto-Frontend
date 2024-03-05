@@ -12,14 +12,26 @@
     </header>
     <main>
         <div class="section-1">
-            <input type="text" placeholder="Digite aqui o texto a ser traduzido">
+            <div class="section-1__campo-input">
+                <input id="texto-a-converter" type="text" placeholder="Digite aqui seu texto ">
+            </div>
             <p>! Apenas letras minusculas e sem acento.</p>
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
+            <div class="section-1__botoes">
+                <button class="section-1__botoes__botao">
+                    Criptografar</button>
+                <button class="section-1__botoes__botao">Descriptografar</button>
+            </div>
         </div>
         <div class="section-2">
-            <img class="img-looking" src="/src/images/lookin.jpg" alt="nozomi looking">
-            <p>Texto descriptografado</p>
+            <div class="section-2__conteudo">
+                <div class="section-2__conteudo__img">
+                   <img class="img-looking" src="/src/images/lookin.jpg" alt="nozomi looking"> 
+                </div>
+                <div class="section-2__conteudo__texto">
+                    <p>Texto descriptografado</p>
+                </div>
+                
+            </div>
         </div>
     </main>
     <footer></footer>
