@@ -1,12 +1,19 @@
+:root{
+    --cor-primaria: white;
+    --cor-secundaria: #335AA6;
+}
+
 *{
-    margin: 0;
+    margin: 0;3
     padding:0;
 }
 body{
     height: 100vh;
+    background-color: var(--cor-primaria);
 }
 
 header{
+    padding: 10px;
 }
 
 main{
@@ -14,6 +21,7 @@ main{
     flex-direction: row;
     margin:10px;
     justify-content: center;
+    height: 70%;
 }
 
 .section-1, .section-2{
@@ -21,42 +29,40 @@ main{
     flex-direction: column;
     gap: 20px;
     width: 50vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
 }
 
-.section-1{
+/* .section-1{
     background-color: aqua;
-}
+} */
 
 .section-2{
-    background-color:crimson;
+    border: #151515;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 .section-1__campo-input{
     display: flex;
     align-items: flex-start;
-    background-color: black;
     height: 60%;
     width: 70%;
-    padding: 10%;
+    padding: 5%;
 }
 #texto-a-converter{
-    padding: 20px;
+    width: 100%;
     font-size:1.2em;
     border: none;
-    /* background-color: rgba(0,0,0,0); */
-    background-color: blueviolet;
     padding: 20;
     vertical-align: top;
 }
 
 
 ::placeholder {
-    color: black;
+    color:#151515;
     font-size:1.2em;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
   }
 
 .section-1__botoes{
@@ -64,20 +70,21 @@ main{
     justify-content: space-around;
     gap: 10px;
     height: 10%;
-    width: 90%;
-    background-color: darkblue;
+    width: 80%;
     align-items: center;
     justify-content: center;
 }
 
 .section-1__botoes__botao{
     border: 0;
+    height: 60%;
     width: 45%;
-    height: 50%;
+    background-color: darkblue;
+    color: whitesmoke;
+    border-radius: 10px;
 }
 
 .section-2__conteudo{
-    background-color: blue;
     height: 92%;
 }
 
@@ -85,7 +92,6 @@ main{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: black;
     padding: 10%;
 }
 
@@ -95,9 +101,26 @@ main{
 
 .section-2__conteudo__texto{
     height: 10%;
-    background-color: deeppink;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
+
+.rodape{
+    padding: 5px;
+    background-color: var(--cor-secundaria);
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.rodape-conteudo{
+    height: 40%;
+}
+
+.descricao{
+    color:aliceblue
+}
+
+/* brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
