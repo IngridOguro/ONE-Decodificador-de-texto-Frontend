@@ -1,2 +1,2 @@
 # ONE-Decodificador-de-texto-Frontend
-Decodificador simples de texto com Javascript
+Projeto criado para o Challenge ONE Iniciante em Programação (Oracle + Alura)
