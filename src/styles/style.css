@@ -4,9 +4,10 @@
 }
 
 *{
-    margin: 0;3
+    margin: 0;
     padding:0;
 }
+
 body{
     height: 100vh;
     background-color: var(--cor-primaria);
