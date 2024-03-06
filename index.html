@@ -13,11 +13,12 @@
     <main>
         <div class="section-1">
             <div class="section-1__campo-input">
-                <input id="texto-a-converter" type="text" placeholder="Digite aqui seu texto ">
+                <input id="section1__campo-input__input" type="text" placeholder="Digite aqui seu texto.." onfocus="hidePlaceholderAndBorder()" onblur="showPlaceholderAndBorder()">
             </div>
             <p>! Apenas letras minusculas e sem acento.</p>
             <div class="section-1__botoes">
-                <button class="section-1__botoes__botao">
+                <button class="section-1__botoes__botao"
+                onclick="pegar_input()">
                     Criptografar</button>
                 <button class="section-1__botoes__botao">Descriptografar</button>
             </div>
