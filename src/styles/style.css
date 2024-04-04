@@ -1,12 +1,15 @@
 :root{
     --cor-primaria: black;
     --cor-secundaria: white;
+    --cor-terciaria: #99C5FF;
+    --cor-quaternária:#A018A8;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
@@ -19,10 +22,13 @@ header{
 }
 
 img{ 
-    padding: 0 15px;
+    padding: 1em;
 }
+
 .titulo{
     color: var(--cor-secundaria);
+    padding: 1em;
+    font-size:x-large;
 
 }
 
@@ -40,21 +46,22 @@ main{
     margin: 5px;
 }
 
+body{
+    height: 100vh;
+}
+
 .content,.content-bottom{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .content{
     height: 60vh;
 }
 
 .content-bottom{
     height: 20vh;
-}
-
-body{
-    height: 100vh;
 }
 
 header{
@@ -65,53 +72,83 @@ input{
     background-color: transparent;
 }
 
+a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+span{
+    color:var(--cor-quaternária);
+}
+
 .section-1, .section-2{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50vw;
-    align-items: center;
-    justify-content: center;
-    border-style: groove;
-    border-width: thin;
-    border-color: var(--cor-secundaria);
-    border-radius: 5px;
     padding: 5px;
     margin: 5px;
-}
-.section-1__campo-input{
+    width: 50vw;
     display: flex;
-    align-items: flex-start;
-    height: 60%;
-    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-style: groove;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: var(--cor-secundaria);
+}
+
+.section-1__campo-input,.section-2__conteudo{
     padding: 5%;
+    width: 70%;
+    height: 40%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     
 }
-#section1__campo-input__input{
+
+#section1__campo-input__input, #texto-section2{
     width: 100%;
-    font-size:1.2em;
+    font-size:small;
     border: none;
     padding: 20;
     vertical-align: top;
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-size: large;
 }
+
+#section1__campo-input__input.hide-border {
+    outline: none;
+  }
 
 #section1__campo-input__input.hide-placeholder::placeholder  {
     opacity: 0;
   }
 
 ::placeholder {
-    color:var(--cor-secundaria);
-    font-size:1.2em;
+    background-color: transparent;
+    color:var(--cor-terciaria);
     opacity: 1; 
-  }
+}
 
-#section1__campo-input__input.hide-border {
-    outline: none;
-  }
+.section-3,.section-4{
+    margin: 4px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
 
-#texto-section2{
-    color: var(--cor-secundaria);
+.section-3{
+    padding:0;
+}
+
+.section-4{
+    border-style: groove;
+    border-width: thin;
+    border-color: var(--cor-secundaria);
+    border-radius: 5px;
+
 }
 
 .section-3__botoes{
@@ -120,12 +157,32 @@ input{
     gap: 10px;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
+.section-3__info{
+    width: 100%;
+    border-style: groove;
+    border-width: thin;
+    border-width: thin;
+    border-color: var(--cor-secundaria);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding:  1.2em 0;
+    margin-top: 1rem;
+}
+
+.section-3__info_info{
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    font-size: x-small;
+}
+
 .section-3__botoes__botao{
-    width: 45%;
+    font-size: x-small;
+    font-weight: bold;
     border-style: groove;
     border-width: thin;
     border-width: thin;
@@ -133,24 +190,24 @@ input{
     background-color: transparent;
     color: var(--cor-secundaria);
     border-radius: 5px;
-    padding: 10px;
+    padding: 1.1em;
+    width: 50%;
 }
 
-.section-3,.section-4{
-    width: 50vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 5px;
+.section-3__botoes__botao:hover{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
 }
 
-.section-4{
-    border-style: groove;
-    border-width: thin;
-    border-color: var(--cor-secundaria);
-    border-radius: 5px;
+.section-4-info{
+    padding: 1em;
 }
+
+ul{
+    color: var(--cor-secundaria);
+}
+
+
 
 /* 
 

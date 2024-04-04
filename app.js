@@ -28,26 +28,27 @@ function getfield(){
 }
 
 function saoMinusculas(str) {
-  let campo = getfield()
-  if(/^[a-z]+$/.test(str)==false){
-    campo = "! Apenas letras minusculas e sem acento.";
-  };
+  return /^[a-z]+$/.test(str)
 }
 
 function Criptografar(){
 let input_cript = getinput();
 let field_cript = getfield();
-   let mensagem_descriptografada = "";
-   for (let letra = 0; letra < input_cript.length; letra++) {
-    for (let id = 0; id < Object.keys(dict).length;id++) {
-      let key = Object.keys(dict)[id].toString()
-      if(input_cript[letra].includes(key)){
-        let value = dict[Object.keys(dict)[id]].toString()
-        mensagem_descriptografada += value;
+if (saoMinusculas(input_cript)==true){
+     let mensagem_descriptografada = "";
+     for (let letra = 0; letra < input_cript.length; letra++) {
+      for (let id = 0; id < Object.keys(dict).length;id++) {
+        let key = Object.keys(dict)[id].toString()
+        if(input_cript[letra].includes(key)){
+          let value = dict[Object.keys(dict)[id]].toString()
+          mensagem_descriptografada += value;
+        }
       }
     }
+    field_cript.innerHTML = mensagem_descriptografada;
+  }else{
+    field_cript.innerHTML = "! Apenas letras minusculas e sem acento.";
   }
-  field_cript.innerHTML = mensagem_descriptografada;
 }               
 
 function Descriptografar(){
