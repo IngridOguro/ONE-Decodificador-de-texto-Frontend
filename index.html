@@ -9,41 +9,46 @@
 <body>
     <header>
         <img class="logo" src="/src/images/Vector.png" alt="logo alura">
+        <p class="titulo">DECODIFICADOR 3000</p>
     </header>
     <main>
-        <div class="section-1">
-            <div class="section-1__campo-input">
-                <input id="section1__campo-input__input" type="text" placeholder="Digite aqui seu texto.." onfocus="hidePlaceholderAndBorder()" onblur="showPlaceholderAndBorder()">
-            </div>
-            <p>! Apenas letras minusculas e sem acento.</p>
-            <div class="section-1__botoes">
-                <button class="section-1__botoes__botao"
-                onclick="Criptografar()">
-                    Criptografar</button>
+        <div class="content">
+            <div class="section-1">
+                <div class="section-1__campo-input">
+                    <input id="section1__campo-input__input" type="text" placeholder="Digite aqui seu texto.." onfocus="hidePlaceholderAndBorder()" onblur="showPlaceholderAndBorder()">
+                </div>
 
-                <button class="section-1__botoes__botao"
-                onclick="Descriptografar()">
-                    Descriptografar</button>
+                <p>! Apenas letras minusculas e sem acento.</p>
+            </div>
+            <div class="section-2">
+                <div class="section-2__conteudo">
+                    <div class="section-2__conteudo__texto">
+                        <p id="texto-section2">Traduzindo..</p>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-        <div class="section-2">
-            <div class="section-2__conteudo">
-                <div class="section-2__conteudo__img">
-                   <img class="img-looking" src="/src/images/lookin.jpg" alt="nozomi looking"> 
-                </div>
-                <div class="section-2__conteudo__texto">
-                    <p id="texto-section2"></p>
-                </div>
-                
-            </div>
+        <div class="content-bottom">
+        <div class="section-3">
+            <div class="section-3__botoes">
+                <button class="section-3__botoes__botao"
+                    onclick="Criptografar()">
+                    Criptografar
+                </button>
+                        
+                <button class="section-3__botoes__botao"
+                    onclick="Descriptografar()">
+                    Descriptografar
+                </button>
+            </div>    
         </div>
+        <div class="section-4"></div>            
+        </div>
+
+        
     </main>
     <footer class="rodape">
-        <div class="rodape-conteudo">
-            <p class="descricao">
-                Desenvolvido por: <strong>Ingrid Oguro</strong>
-            </p>
-        </div>
     </footer>
     <script src="app.js" defer></script>
 </body>
